@@ -52,7 +52,7 @@ public class A1Jedi {
 				// The name of the item
 				String itemName = scan.next();
 				
-				// The array index for totalBought[] or itemNames[] of the item
+				// Finds the index of itemName in itemNames
 				int itemIndex = Arrays.asList(itemNames).indexOf(itemName);
 				
 				// If the customer has not already bought the item, customersPerItem is incremented

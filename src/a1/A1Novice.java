@@ -11,8 +11,9 @@ public class A1Novice {
 		// Takes the first integer to be the number of customers
 		int numCustomers = scan.nextInt();
 		
-		/* Stores the total costs for each customer
-		 * Initialize array of counts of size numCustomers */
+		/* Stores the total amount spent per customer
+		 * Initialized to the size numCustomers 
+		 */
 		double[] totals = new double[numCustomers];
 		
 		/* Stores the names of each customer
@@ -29,6 +30,7 @@ public class A1Novice {
 			// A name of the form "First Last" is stores in names[] as "F. Last"
 			names[i] = firstName + " " + lastName;
 			
+			// The number of items for each customer
 			int numItems = scan.nextInt();
 			
 			// The initial total for a customer is zero
@@ -52,6 +54,7 @@ public class A1Novice {
 		
 		scan.close();
 		
+		// Runs once for each customer, as determined by numCustomers
 		for (int i = 0; i < numCustomers; i++) {
 			
 			// String.format is used to ensure two decimal places for all output numbers

@@ -13,10 +13,10 @@ public class A1Adept {
 		// The number of items in the store
 		int itemCount = scan.nextInt();
 		
-		// The names of all the items in the store
+		// The names of all the items in the store, initialized with length itemCount
 		String[] items = new String[itemCount];
 		
-		// The prices of all the items in the store
+		// The prices of all the items in the store, initialized with length itemCount
 		double[] prices = new double[itemCount];
 		
 		// Fills items[] and prices[] with item names and their prices respectively
@@ -76,7 +76,11 @@ public class A1Adept {
 		
 	}
 	
-	// Finds the index of the maximum of an array, by default the first element
+	/* Finds the index of the maximum of an array
+	 * Input: an array of doubles
+	 * Output: The index of the greatest number in that array
+	 * Will return 0 (the first element) if there is no greatest number
+	 */
 	public static int max(double[] input) {
 		
 		int max = 0;
@@ -92,7 +96,11 @@ public class A1Adept {
 		return max;
 	}
 	
-	// Finds the index of the minimum of an array, by default the first element
+	/* Finds the index of the minimum of an array
+	 * Input: an array of doubles
+	 * Output: The index of the smallest number in that array
+	 * Will return 0 (the first element) if there is no smallest number
+	 */
 	public static int min(double[] input) {
 			
 			int min = 0;
@@ -108,7 +116,10 @@ public class A1Adept {
 			return min;
 		}
 	
-	// Finds the average of an array
+	/* Finds the average value of array elements
+	 * Input: an array of doubles
+	 * Output: The String average value of the array elements, to two decimal places
+	 */
 	public static String avg(double[] input) {
 		
 		double total = 0;
